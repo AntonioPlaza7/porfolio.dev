@@ -1,4 +1,4 @@
-# Mi Portfolio Web Personal
+# Mi Porfolio Web Personal
 
 ¡Bienvenido/a al repositorio de mi porfolio web personal! Este proyecto ha sido desarrollado para mostrar mis habilidades en desarrollo web y presentar mis proyectos más recientes.
 

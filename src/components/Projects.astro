@@ -1,0 +1,141 @@
+---
+const PROJECTS = [
+    {
+        title: "Proyecto 1",
+        description:
+            "Trabajo de Fin de Grado - Ciclo Superior en Desarrollo de Aplicaciones Multiplataforma.",
+        github: "https://github.com/AntonioPlaza7/TFG",
+        image: "/Projects/imgStudentTrack.webp",
+        tags: ["C#", "Avalonia", "SQLite", "GitHub"],
+    },
+    {
+        title: "Proyecto 2",
+        description: "Prácticas de empresa en CodeArts Solutions.",
+        github: "https://github.com/AntonioPlaza7/Practicas-CodeArts-Solutions",
+        image: "/Projects/imgCodeArts.webp",
+        tags: [
+            "C#",
+            "PstgreSQL",
+            "Linux (Ubuntu)",
+            "Docker",
+            "Unity",
+            "VS Code",
+            "SCRUM",
+            "Git",
+            "GitHub",
+        ],
+    },
+    {
+        title: "Proyecto 3",
+        description: "Aplicación de Reserva de Eventos con JavaFX y FXML.",
+        github: "https://github.com/AntonioPlaza7/FormularioReservas",
+        image: "/Projects/imgReservas.webp",
+        tags: [
+            "Java",
+            "CSS",
+            "OpenJFX",
+            "FXML",
+            "Scene Builder",
+            "JUnit",
+            "Maven",
+            "Eclipse",
+            "Git",
+            "GitHub",
+        ],
+    },
+    {
+        title: "Proyecto 4",
+        description: "Manipulación Gráfica con OpenJFX y FXML.",
+        github: "https://github.com/AntonioPlaza7/MovingShapes",
+        image: "/Projects/imgShapes.webp",
+        tags: [
+            "Java",
+            "CSS",
+            "OpenJFX",
+            "FXML",
+            "Scene Builder",
+            "Eclipse",
+            "Git",
+            "GitHub",
+        ],
+    },
+    {
+        title: "Proyecto 5",
+        description:
+            "Gestión de Clientes con Historial de Visitas en ObjectDB.",
+        github: "https://github.com/AntonioPlaza7/HistoricoVisitas",
+        image: "/Projects/imgVisitas.webp",
+        tags: ["Java", "ObjectDB", "JUnit", "IntelliJ IDEA", "Git", "GitHub"],
+    },
+    {
+        title: "Proyecto 6",
+        description: "Gestión de Alumnos con Hibernate y MySQL.",
+        github: "https://github.com/AntonioPlaza7/GestionAlumnos",
+        image: "/Projects/imgAlumnos.webp",
+        tags: [
+            "Java#",
+            "MySQL",
+            "Maven",
+            "Hibernate ORM",
+            "IntelliJ IDEA",
+            "Git",
+            "GitHub",
+        ],
+    },
+    {
+        title: "Proyecto 7",
+        description: "Aplicación Android: Saludo y Modo Oscuro.",
+        github: "https://github.com/AntonioPlaza7/Dark-Light-Theme",
+        image: "/Projects/imgDarkMode.webp",
+        tags: ["Kotlin", "XML", "Android Studio", "Git", "GitHub"],
+    },
+    {
+        title: "Proyecto 8",
+        description: "Aplicación Android: Reproductor de Audio Básico.",
+        github: "https://github.com/AntonioPlaza7/Play-Stop",
+        image: "/Projects/imgPlayStop.webp",
+        tags: [
+            "Kotlin",
+            "XML",
+            "Android Studio",
+            "Android SDK",
+            "Git",
+            "GitHub",
+        ],
+    },
+];
+---
+
+{
+    PROJECTS.map(({ image, title, description, tags, github }) => (
+        <article class="mb-12">
+            <h3 class="text-2xl font-semibold text-yellow-200 mb-2">{title}</h3>
+            <p class="text-lg mb-4 text-pretty">{description}</p>
+            <ul class="flex flex-wrap gap-2 mb-4">
+                {tags.map((tag) =>
+                    tag === "GitHub" && github ? (
+                        <li>
+                            <a
+                                href={github}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                class="inline-block bg-gray-900 text-white text-xs font-semibold px-3 py-1 rounded-full shadow-sm hover:bg-gray-700 transition dark:bg-gray-200 dark:text-gray-900 dark:hover:bg-gray-300"
+                            >
+                                {tag}
+                            </a>
+                        </li>
+                    ) : (
+                        <li class="inline-block bg-sky-100 text-sky-800 text-xs font-semibold px-3 py-1 rounded-full shadow-sm dark:bg-yellow-900 dark:text-yellow-200">
+                            {tag}
+                        </li>
+                    ),
+                )}
+            </ul>
+            <img
+                class="rounded-lg shadow-2xl shadow-white/15"
+                src={image}
+                alt={`Captura de pantalla del proyecto ${image}`}
+            />
+        </article>
+    ))
+}

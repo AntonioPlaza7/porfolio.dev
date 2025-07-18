@@ -1,0 +1,53 @@
+---
+import ExperienceItem from "./ExperienceItem.astro";
+
+
+const EXPERIENCE = [
+  {
+    title: "Desarrollador Backend",
+    company: "CodeArts Solutions",
+    date: "Mar 2025 - Jun 2025",
+    description: "Participé en el desarrollo de la aplicación DPTelemetry dentro de un equipo de 10 desarrolladores, brindando soporte tanto a backend como frontend. Me encargué de solucionar bugs, crear nuevas funcionalidades y mantener las ya existentes, trabajando bajo la metodología SCRUM con gestión de tareas en GitHub y entregas quincenales por Sprint. Utilicé tecnologías como C#, PostgreSQL, Docker, Unity, VS Code, Git y Linux.",
+  },
+  {
+    title: "Especialista en Reclamaciones y Fraudes en BBVA",
+    company: "Opplus BPO Solutions",
+    date: "Dic 2021 - Oct 2023",
+    description: "Desempeñé funciones como Gestor de Banca en el departamento SAC-Gestión de Reclamaciones de BBVA, especializado en el área de Fraudes.",
+  },
+  {
+    title: "Especialista administrativo y telecomunicaciones",
+    company: "Sigestel SL",
+    date: "Mar 2020 - Jun 2021",
+    description: "Realicé tareas de elaboración y modificación de contratos de telecomunicaciones, así como el alta de clientes y la resolución de incidencias técnicas y de facturación, brindando soporte integral y asegurando una atención eficiente y orientada al cliente.",
+  },
+  {
+    title: "Gestor de recobro",
+    company: "Medina Cuadros Abogados",
+    date: "Dic 2019 - Ene 2020",
+    description: "Ejercí responsabilidades como Gestor de Recobro para Movistar, llevando a cabo el seguimiento de expedientes en colaboración con asesoría jurídica y realizando negociaciones de deuda con clientes, con foco en la recuperación efectiva y el cumplimiento de objetivos financieros.",
+  },
+  {
+    title: "Gestor de banca Línea BBVA",
+    company: "Transcom Worldwide Spain SL",
+    date: "Nov 2014 -Jul 2019",
+    description: "Me desempeñé como Gestor de Banca a Distancia para BBVA, con un conocimiento avanzado de productos y servicios bancarios. Destaco mi experiencia en el cumplimiento de métricas de atención al cliente, así como en la coordinación de grupos, formación de nuevas incorporaciones y gestión del equipo asignado.",
+  },
+];
+
+---
+
+
+
+<ol class="relative border-s border-gray-200 dark:border-gray-700 ml-3">                  
+    
+{ 
+    EXPERIENCE.map((experience) => (
+        <li class="mb-10 ms-4">
+           <ExperienceItem { ...experience } />
+        </li>
+    ))
+}
+
+</ol>
+

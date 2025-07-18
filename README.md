@@ -2,6 +2,9 @@
 
 ¡Bienvenido/a al repositorio de mi porfolio web personal! Este proyecto ha sido desarrollado para mostrar mis habilidades en desarrollo web y presentar mis proyectos más recientes.
 
+<img width="1013" height="832" alt="image" src="https://github.com/user-attachments/assets/4a479ebe-165e-4d6b-93bb-eca5b2d5e79c" />
+
+
 ## Características Principales
 
 * **Diseño Moderno y Responsivo:** Adaptado para visualizarse perfectamente en cualquier dispositivo (móvil, tablet, escritorio).

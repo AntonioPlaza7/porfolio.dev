@@ -2,7 +2,7 @@
 
 ¡Bienvenido/a al repositorio de mi porfolio web personal! Este proyecto ha sido desarrollado para mostrar mis habilidades en desarrollo web y presentar mis proyectos más recientes.
 
-https://strong-banoffee-037f7b.netlify.app/
+Accede desde este enlace: https://strong-banoffee-037f7b.netlify.app/
 
 <img width="1013" height="832" alt="image" src="https://github.com/user-attachments/assets/4a479ebe-165e-4d6b-93bb-eca5b2d5e79c" />
 

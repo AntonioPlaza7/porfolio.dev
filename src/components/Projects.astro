@@ -1,16 +1,17 @@
 ---
 const PROJECTS = [
     {
-        title: "Proyecto 1",
+        title: "Proyecto 1. TFG - Ciclo Superior en Desarrollo de Aplicaciones Multiplataforma.",
         description:
-            "Trabajo de Fin de Grado - Ciclo Superior en Desarrollo de Aplicaciones Multiplataforma.",
+            "StudentTrack es una herramienta de escritorio para tutores y profesores, diseñada para organizar de forma eficiente a alumnos y grupos de trabajo.",
         github: "https://github.com/AntonioPlaza7/TFG",
         image: "/Projects/imgStudentTrack.webp",
         tags: ["C#", "Avalonia", "SQLite", "GitHub"],
     },
     {
-        title: "Proyecto 2",
-        description: "Prácticas de empresa en CodeArts Solutions.",
+        title: "Proyecto 2. Prácticas de empresa en CodeArts Solutions.",
+        description:
+            "Este proyecto destaca mi experiencia como desarrollador backend y mi contribución al soporte fullstack en el desarrollo de la aplicación DPTelemetry durante mis prácticas en CodeArts Solutions.",
         github: "https://github.com/AntonioPlaza7/Practicas-CodeArts-Solutions",
         image: "/Projects/imgCodeArts.webp",
         tags: [
@@ -26,8 +27,9 @@ const PROJECTS = [
         ],
     },
     {
-        title: "Proyecto 3",
-        description: "Aplicación de Reserva de Eventos con JavaFX y FXML.",
+        title: "Proyecto 3. Aplicación de Reserva de Eventos con JavaFX y FXML.",
+        description:
+            "Aplicación de escritorio en JavaFX para reservas de eventos.",
         github: "https://github.com/AntonioPlaza7/FormularioReservas",
         image: "/Projects/imgReservas.webp",
         tags: [
@@ -44,8 +46,9 @@ const PROJECTS = [
         ],
     },
     {
-        title: "Proyecto 4",
-        description: "Manipulación Gráfica con OpenJFX y FXML.",
+        title: "Proyecto 4. Manipulación Gráfica con OpenJFX y FXML.",
+        description:
+            "Aplicación de escritorio en JavaFX para el control de stock y la manipulación de formas gráficas.",
         github: "https://github.com/AntonioPlaza7/MovingShapes",
         image: "/Projects/imgShapes.webp",
         tags: [
@@ -60,16 +63,17 @@ const PROJECTS = [
         ],
     },
     {
-        title: "Proyecto 5",
+        title: "Proyecto 5. Gestión de Clientes con Historial de Visitas en ObjectDB.",
         description:
-            "Gestión de Clientes con Historial de Visitas en ObjectDB.",
+            "Aplicación de consola en Java para la gestión de clientes con historial de visitas.",
         github: "https://github.com/AntonioPlaza7/HistoricoVisitas",
         image: "/Projects/imgVisitas.webp",
         tags: ["Java", "ObjectDB", "JUnit", "IntelliJ IDEA", "Git", "GitHub"],
     },
     {
-        title: "Proyecto 6",
-        description: "Gestión de Alumnos con Hibernate y MySQL.",
+        title: "Proyecto 6. Gestión de Alumnos con Hibernate y MySQL.",
+        description:
+            "Aplicación de consola en Java para la gestión de alumnos, usando Hibernate y MySQL.",
         github: "https://github.com/AntonioPlaza7/GestionAlumnos",
         image: "/Projects/imgAlumnos.webp",
         tags: [
@@ -83,15 +87,16 @@ const PROJECTS = [
         ],
     },
     {
-        title: "Proyecto 7",
-        description: "Aplicación Android: Saludo y Modo Oscuro.",
+        title: "Proyecto 7. Aplicación Android: Saludo y Modo Oscuro.",
+        description:
+            "Aplicación Android en Kotlin que muestra saludo personalizado y modo oscuro.",
         github: "https://github.com/AntonioPlaza7/Dark-Light-Theme",
         image: "/Projects/imgDarkMode.webp",
         tags: ["Kotlin", "XML", "Android Studio", "Git", "GitHub"],
     },
     {
-        title: "Proyecto 8",
-        description: "Aplicación Android: Reproductor de Audio Básico.",
+        title: "Proyecto 8. Aplicación Android: Reproductor de Audio Básico.",
+        description: "Aplicación Android en Kotlin para reproducir audio.",
         github: "https://github.com/AntonioPlaza7/Play-Stop",
         image: "/Projects/imgPlayStop.webp",
         tags: [
@@ -109,8 +114,10 @@ const PROJECTS = [
 {
     PROJECTS.map(({ image, title, description, tags, github }) => (
         <article class="mb-12">
-            <h3 class="text-2xl font-semibold text-yellow-200 mb-2">{title}</h3>
-            <p class="text-lg mb-4 text-pretty">{description}</p>
+            <h3 class="text-xl font-semibold text-yellow-200 opacity-90 mb-2">{title}</h3>
+            <p class="text-sm md:text-base lg:text-lg mb-4 text-pretty opacity-90">
+                {description}
+            </p>{" "}
             <ul class="flex flex-wrap gap-2 mb-4">
                 {tags.map((tag) =>
                     tag === "GitHub" && github ? (
